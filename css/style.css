@@ -10,24 +10,30 @@ main{
     display: flex;
     justify-content: center;
 }
+hr{
+    border: 1px solid #D1D1D1;
+    /* margin-top: 21px; */
+}
 .container{
     background-color: #FFFF;
-    padding: 33px;
+    padding: 30px;
 }
 
 /* top players style */
 .top-players{
-    height: 679px;
     width: 870px;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 .section-title{
     font-size: 24px;
     color: #562EFF;
+    margin-top: 3px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
 }
 .player{
     display: flex;
@@ -39,4 +45,5 @@ main{
 }
 .player-name{
     margin-left: 16px;
+    font-size: 18px;
 }
