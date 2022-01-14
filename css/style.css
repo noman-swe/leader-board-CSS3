@@ -23,6 +23,7 @@ hr{
     padding: 30px;
     margin-top: 21px;
     border-radius: 5px;
+    width: 870px;
 }
 
 /* top players style */
@@ -87,18 +88,7 @@ hr{
 courses css  
 ------------*/
 
-/* .all-courses{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.course{
-    width: 253px;
-}
-.course .course-banner img{
-    width: 224px;
-    height: 104px;
-} */
-.all-courses{
+.courses{
     display: grid;
     grid-column-gap: 24px ; 
     grid-template-columns: repeat(3, 1fr);
@@ -131,4 +121,19 @@ courses css
 }
 .course-duration{
     color: #FF4A60;;
+}
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+    /* ete kore player guli column boraBor majha-majhi ashlo */
+    
 }
